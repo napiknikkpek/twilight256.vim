@@ -238,7 +238,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Normal", "ffffff", "", "")
 
     " highlight groups
-    "call <SID>X("Cursor", "708090", "f0e68c", "")
+    call <SID>X("Cursor", "708090", "f0e68c", "")
     "CursorIM
     "Directory
     "DiffAdd
@@ -295,6 +295,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     delf <SID>grey_level
     delf <SID>grey_number
     " }}}
+
+    hi! link TermCursorNC Cursor
 endif
 
 " vim: set fdl=0 fdm=marker:
